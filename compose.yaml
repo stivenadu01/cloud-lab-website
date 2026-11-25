@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: cloud-lab-website:1.0.0
+    container_name: cloud-lab-container-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:80"
